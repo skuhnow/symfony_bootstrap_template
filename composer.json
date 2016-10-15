@@ -1,6 +1,6 @@
 {
-    "name": "sebastian/.checkout",
-    "license": "proprietary",
+    "name": "skuhnow/symfony-bootstrap-template",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
