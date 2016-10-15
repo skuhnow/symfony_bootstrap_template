@@ -1,5 +1,8 @@
 Symfony 3 Template with Bootstrap
 =================================
+
+[![Build Status](https://travis-ci.org/skuhnow/symfony_bootstrap_template.svg?branch=master)](https://travis-ci.org/skuhnow/symfony_bootstrap_template)
+
 A default [Symfony 3](http://symfony.com/doc/current/index.html) installation with some extras
 
 composer
