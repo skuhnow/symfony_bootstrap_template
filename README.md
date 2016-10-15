@@ -1,6 +1,6 @@
 Symfony 3 Template with Bootstrap
 =================================
-A default Symfony 3 installation with some extras
+A default [Symfony 3](http://symfony.com/doc/current/index.html) installation with some extras
 
 composer
 --------
