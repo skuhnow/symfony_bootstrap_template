@@ -16,3 +16,6 @@
 /web/bundles/
 node_modules/
 .idea/
+/web/css/
+/web/fonts/
+/web/js/
