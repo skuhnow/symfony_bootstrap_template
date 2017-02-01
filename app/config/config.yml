@@ -70,18 +70,32 @@ assetic:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'
         jsqueeze: ~
     assets:
-      glyphicons-halflings-regular-eot:
-        inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.eot'
-        output: 'fonts/bootstrap/glyphicons-halflings-regular.eot'
-      glyphicons-halflings-regular-svg:
-        inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.svg'
-        output: 'fonts/bootstrap/glyphicons-halflings-regular.svg'
-      glyphicons-halflings-regular-ttf:
-        inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.ttf'
-        output: 'fonts/bootstrap/glyphicons-halflings-regular.ttf'
-      glyphicons-halflings-regular-woff:
-        inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.woff'
-        output: 'fonts/bootstrap/glyphicons-halflings-regular.woff'
-      glyphicons-halflings-regular-woff2:
-        inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.woff2'
-        output: 'fonts/bootstrap/glyphicons-halflings-regular.woff2'
+        glyphicons-halflings-regular-eot:
+            inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.eot'
+            output: 'fonts/bootstrap/glyphicons-halflings-regular.eot'
+        glyphicons-halflings-regular-svg:
+            inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.svg'
+            output: 'fonts/bootstrap/glyphicons-halflings-regular.svg'
+        glyphicons-halflings-regular-ttf:
+            inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.ttf'
+            output: 'fonts/bootstrap/glyphicons-halflings-regular.ttf'
+        glyphicons-halflings-regular-woff:
+            inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.woff'
+            output: 'fonts/bootstrap/glyphicons-halflings-regular.woff'
+        glyphicons-halflings-regular-woff2:
+            inputs: '%kernel.root_dir%/Resources/assets/fonts/glyphicons-halflings-regular.woff2'
+            output: 'fonts/bootstrap/glyphicons-halflings-regular.woff2'
+
+
+liip_imagine :
+    resolvers :
+        default :
+            web_path : ~
+    filter_sets :
+        cache : ~
+        thumbnail :
+            quality : 75
+            filters :
+                thumbnail  : { size : [500, 376], mode : outbound }
+                # 4px larger to create a 2px border around the final image
+                background : { size : [504, 380], position : center, color : '#000000' }
