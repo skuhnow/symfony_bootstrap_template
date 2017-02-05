@@ -31,7 +31,9 @@
         "symfony/assetic-bundle": "^2.8",
         "leafo/scssphp": "^0.6.6",
         "patchwork/jsqueeze": "^2.0",
-        "liip/imagine-bundle": "^1.6"
+        "liip/imagine-bundle": "^1.6",
+        "sonata-project/admin-bundle": "^3.13",
+        "sonata-project/doctrine-orm-admin-bundle": "^3.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

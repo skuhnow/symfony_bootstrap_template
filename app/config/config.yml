@@ -11,7 +11,7 @@ parameters:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -99,3 +99,10 @@ liip_imagine :
                 thumbnail  : { size : [500, 376], mode : outbound }
                 # 4px larger to create a 2px border around the final image
                 background : { size : [504, 380], position : center, color : '#000000' }
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]
