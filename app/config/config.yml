@@ -110,3 +110,10 @@ liip_imagine:
                 thumbnail: { size : [500, 376], mode : outbound }
                 # 4px larger to create a 2px border around the final image
                 background: { size : [504, 380], position : center, color : '#000000' }
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        upload_image:
+            uri_prefix:         /uploads/images
+            upload_destination: '%kernel.root_dir%/../web/uploads/images'

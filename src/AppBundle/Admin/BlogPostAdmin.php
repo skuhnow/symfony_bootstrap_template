@@ -8,6 +8,7 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class BlogPostAdmin extends AbstractAdmin
 {
@@ -18,6 +19,7 @@ class BlogPostAdmin extends AbstractAdmin
                 ->with('Content', array('class' => 'col-md-9'))
                     ->add('title', 'text')
                     ->add('body', 'textarea')
+                    ->add('imageFile', VichFileType::class)
                 ->end()
 
                 ->with('Meta data', array('class' => 'col-md-3'))
@@ -58,6 +60,7 @@ class BlogPostAdmin extends AbstractAdmin
             ->addIdentifier('title', null, ['label' => 'Titel'])
             ->add('category.name', null, ['label' => 'Kategorie'])
             ->add('draft', null, ['label' => 'Entwurf'])
+            ->add('imageFilename')
         ;
     }
 }
