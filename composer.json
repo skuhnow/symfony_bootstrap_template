@@ -33,7 +33,8 @@
         "patchwork/jsqueeze": "^2.0",
         "liip/imagine-bundle": "^1.6",
         "sonata-project/admin-bundle": "^3.13",
-        "sonata-project/doctrine-orm-admin-bundle": "^3.1"
+        "sonata-project/doctrine-orm-admin-bundle": "^3.1",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

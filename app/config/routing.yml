@@ -13,3 +13,7 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
+
+# app/config/routing.yml
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

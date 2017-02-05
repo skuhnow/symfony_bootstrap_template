@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Liip\ImagineBundle\LiipImagineBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
 
             // Sontata
             new Sonata\CoreBundle\SonataCoreBundle(),
